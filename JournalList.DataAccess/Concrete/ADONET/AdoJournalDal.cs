@@ -35,7 +35,7 @@ namespace JournalList.DataAccess.Concrete.ADONET
 
         public void Add(Journal entity)
         {
-            SqlCommand cmd = new SqlCommand("INSERT INTO Dergiler(Name, Price, IsMonthly) VALUE (@Name, @Price,@IsMonthly)");
+            SqlCommand cmd = new SqlCommand("INSERT INTO Journals(Name, Price, IsMonthly) VALUE (@Name, @Price,@IsMonthly)");
             cmd.Parameters.AddWithValue("@Name", entity.Name);
             cmd.Parameters.AddWithValue("@Price", entity.Price);
             cmd.Parameters.AddWithValue("@IsMonthly", entity.IsMonthly);
