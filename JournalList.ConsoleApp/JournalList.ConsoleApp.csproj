@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JournalList.Business\JournalList.Business.csproj" />
+    <ProjectReference Include="..\JournalList.DataAccess\JournalList.DataAccess.csproj" />
+    <ProjectReference Include="..\JournalList.Entities\JournalList.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
